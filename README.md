@@ -28,4 +28,10 @@ The project includes tests for:
 - **Incomplete task**: Tests task with done: false returns false
 - **Missing property**: Tests task without done property returns false
 
+### Task overdue functionality:
+- **Overdue task**: Tests task with dueDate before today returns true
+- **Future task**: Tests task with dueDate after today returns false
+- **Today's task**: Tests task with dueDate equal to today returns false
+- **Invalid date**: Tests invalid date format throws error
+
 All tests are located in `tests/utils.test.js` and test functions from `src/utils.js`.
