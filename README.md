@@ -16,10 +16,16 @@ A simple project demonstrating Jest testing with basic addition functions.
 
 ## Tests
 
-The project includes tests for addition functionality:
+The project includes tests for:
 
+### Addition functionality:
 - **Edge cases**: Tests addition with negative numbers (-1 + 1 = 0)
 - **Zero handling**: Tests addition with zeros (0 + 0 = 0)  
 - **Error handling**: Tests that invalid input throws an error
+
+### Task completion functionality:
+- **Complete task**: Tests task with done: true returns true
+- **Incomplete task**: Tests task with done: false returns false
+- **Missing property**: Tests task without done property returns false
 
 All tests are located in `tests/utils.test.js` and test functions from `src/utils.js`.
