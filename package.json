@@ -1,0 +1,23 @@
+{
+  "name": "jest-beginner-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boaz-marube/jest-beginner-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boaz-marube/jest-beginner-tests/issues"
+  },
+  "homepage": "https://github.com/Boaz-marube/jest-beginner-tests#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.1.2"
+  }
+}
