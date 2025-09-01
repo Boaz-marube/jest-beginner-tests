@@ -7,10 +7,11 @@ function notSum(input){
     }
 }
 
-function isTaskComplete (){
-    return ;
+function isTaskComplete (task){
+    return task.done || false;
 }
 function isTaskOverdue (){
+
     return ;
 }
 module.exports = {
