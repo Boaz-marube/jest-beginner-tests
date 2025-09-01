@@ -34,4 +34,14 @@ The project includes tests for:
 - **Today's task**: Tests task with dueDate equal to today returns false
 - **Invalid date**: Tests invalid date format throws error
 
+### Task counting functionality:
+- **Empty array**: Tests empty array returns 0 completed tasks
+- **All complete**: Tests array with all done: true returns array length
+- **Mixed tasks**: Tests mixed array returns correct count of completed tasks
+
+### Date normalization functionality:
+- **ISO string**: Tests ISO date string converts to YYYY-MM-DD format
+- **Date string**: Tests regular date string converts to YYYY-MM-DD format
+- **Invalid input**: Tests invalid date string throws error
+
 All tests are located in `tests/utils.test.js` and test functions from `src/utils.js`.

@@ -20,9 +20,25 @@ function isTaskOverdue (task, today){
     
     return taskDate < todayDate;
 }
+
+function countCompleted(tasks) {
+    return tasks.filter(task => task.done === true).length;
+}
+
+function normalizeDate(isoOrDateString) {
+    const date = new Date(isoOrDateString);
+    
+    if (isNaN(date.getTime())) {
+        throw new Error("Invalid date format");
+    }
+    
+    return date.toISOString().split('T')[0];
+}
 module.exports = {
     add: add,
     isTaskComplete: isTaskComplete,
     isTaskOverdue: isTaskOverdue,
-    notSum: notSum
+    notSum: notSum,
+    countCompleted: countCompleted,
+    normalizeDate: normalizeDate
 }
